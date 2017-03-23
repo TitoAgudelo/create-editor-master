@@ -64,7 +64,7 @@ app.get( '/images', ( req, res ) => {
 
 // general route
 app.get( '/', ( req, res ) => {
-  res.sendFile( __dirname + '/index.html' );
+  res.sendFile( __dirname + 'index.html' );
 })
 
 var server = app.listen( 8000, _ => {
