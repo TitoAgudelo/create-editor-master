@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Canvas from './canvas/canvas';
+import Images from './images/images';
+import Upload from './upload/upload';
+import Text from './text/text';
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,13 +10,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="sidepane col-sm-4 col-md-4 col-lg-3">
+          <Upload />
+          <div className="assets">
+            <h3>Assets</h3>
+            <Text />
+            <Images />
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Canvas />
       </div>
     );
   }

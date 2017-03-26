@@ -1,5 +1,28 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.sidepane {
+  background: #E8E8EA;
+  height: 100%;
+  text-align: left;
+}
+
+.sidepane {
+  height: 100%;
+  background: #E8E8EA;
+}
+
+.sidepane .form {
+  margin: 10px 0;
+}
+
+.sidepane .assets {
+  width: 100%;
 }
