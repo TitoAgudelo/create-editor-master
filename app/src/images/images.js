@@ -26,9 +26,8 @@ class Images extends Component {
 	        		<h4>Images</h4>
 	        		<ul className="list-unstyled">
 	        			{
-				            this.state.images.map((image) => {
-				            	var img = image;
-				              	return <li><img src={img} className="img-rounded" /></li>
+				            this.state.images.map((image, index) => {
+				              	return <li><img src={image} key={index} className="img-rounded" /></li>
 				            })
 			          	}
 	        		</ul>
