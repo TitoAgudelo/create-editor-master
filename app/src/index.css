@@ -12,6 +12,7 @@ html, body {
   background: #E8E8EA;
   height: 100%;
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .sidepane {

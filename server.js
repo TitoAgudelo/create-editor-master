@@ -41,6 +41,8 @@ let upload = multer( {
 
 // route for file upload
 app.post( '/uploads', ( req, res ) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
   upload( req, res, err => {
     if ( err ) {
       console.log( err )
@@ -54,6 +56,8 @@ app.post( '/uploads', ( req, res ) => {
 })
 
 app.get( '/images', ( req, res ) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
   let file_path = req.protocol + '://' + req.get('host') + '/images/';
   let files = fs.readdirSync( './images/' );
   files = files
